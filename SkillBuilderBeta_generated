@@ -1,0 +1,206 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "EventAdder",
+      "samples": [
+        "Set up a {Name} for {Date} at {Time}"
+      ],
+      "slots": [
+        {
+          "name": "Name",
+          "type": "Names",
+          "samples": []
+        },
+        {
+          "name": "Time",
+          "type": "AMAZON.TIME",
+          "samples": []
+        },
+        {
+          "name": "Date",
+          "type": "AMAZON.DATE",
+          "samples": []
+        },
+        {
+          "name": "Location",
+          "type": "Rooms",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "Reminder",
+      "samples": [
+        "{Action} out a reminder to {Groups}"
+      ],
+      "slots": [
+        {
+          "name": "Action",
+          "type": "AlertType",
+          "samples": []
+        },
+        {
+          "name": "Groups",
+          "type": "People",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "AlertType",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "SMS",
+            "synonyms": [
+              "text",
+              "S.M.S.",
+              "message"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Email",
+            "synonyms": [
+              "mail"
+            ]
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Call",
+            "synonyms": [
+              "ring",
+              "phone",
+              "phone call"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Names",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "Business meeting",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Marketing meeting",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Budgeting meeting",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Fun event",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "People",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "VP of Marketing",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "VP of communications",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "HR department",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Engineering department",
+            "synonyms": []
+          }
+        }
+      ]
+    },
+    {
+      "name": "Rooms",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "Orange Room",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Red Room",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Conference Room",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Break Room",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "Meeting Hall",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
